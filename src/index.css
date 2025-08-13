@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.required-star {
+  color: red;
+  margin-left: 2px;
+}

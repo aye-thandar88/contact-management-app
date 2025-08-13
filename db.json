@@ -1,0 +1,15 @@
+{
+  "contacts": [
+    {
+      "firstName": "Aye",
+      "lastName": "Thandar",
+      "email": "aye@example.com",
+      "role": "Admin",
+      "gender": "Female",
+      "isActive": true,
+      "newsletter": false,
+      "birthDate": "1997-04-18",
+      "id": "1"
+    }
+  ]
+}
