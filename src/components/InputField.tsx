@@ -25,7 +25,7 @@ export const InputField = ({
         id={name}
         name={name}
         {...props}
-        className={`border p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 `}
+        className={`border p-2 w-full rounded-md focus:border-none focus:outline-none focus:ring-2 focus:ring-blue-500 `}
       />
 
       {error && <p className="text-red-600 text-sm mt-1">{error.message}</p>}

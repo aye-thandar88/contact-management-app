@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -60,7 +60,7 @@ export default function ContactFormModal({
   useEffect(() => {
     if (initial) reset({ ...initial, birthDate: initial.birthDate });
     else reset(initialValue);
-  }, [initial, reset]);
+  }, [open, initial, reset]);
 
   if (!open) return null;
 
@@ -168,7 +168,7 @@ export default function ContactFormModal({
           </div>
 
           <div className="flex justify-end gap-2">
-            <Button onClick={onClose} variant="outline">
+            <Button type="button" onClick={onClose} variant="outline">
               Cancel
             </Button>
             <Button type="submit" className="bg-green-600 hover:bg-green-700">
